@@ -8,6 +8,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.clon_fulanito.ui.pantallas.principales.PantallaDePublicaciones
 import com.example.clon_fulanito.vista_modelos.FulanitoViewModel
+import com.example.apis_star_wars.ui.theme.pantallas.principales.star_wars.PantallaCuriosidades
+
 
 @Composable
 fun PantallaNavegadora(modifier: Modifier, vm_fulanito: FulanitoViewModel){
@@ -23,6 +25,11 @@ fun PantallaNavegadora(modifier: Modifier, vm_fulanito: FulanitoViewModel){
         composable<PantallaPublicacion> {
             PantallaDePublicaciones(modifier = modifier, vm_fulanito)
         }
+
+        composable("curiosidades") {
+            PantallaCuriosidades()
+        }
+
 
         composable<PantallaPerfil> {  }
     }

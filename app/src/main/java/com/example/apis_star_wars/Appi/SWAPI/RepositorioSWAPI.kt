@@ -14,3 +14,6 @@ class RepositorioSWAPI {
         return servicio_swapi.obtener_nave(id)
     }
 }
+
+
+/*testo solo para ver si si se subio bien el archivo, se supo a las 3:06 am*/

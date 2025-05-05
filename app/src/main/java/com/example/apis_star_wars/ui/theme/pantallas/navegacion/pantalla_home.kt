@@ -19,6 +19,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.input.pointer.motionEventSpy
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.util.fastForEachIndexed
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -43,7 +44,7 @@ fun MenuPrincipal(modifier: Modifier){
 
     Scaffold(modifier = modifier, bottomBar = {
         NavigationBar {
-            BotonesInferioresNavegacion().botones_de_navegacion().forEachIndexed { indice, boton_de_navegacion ->
+            BotonesInferioresNavegacion().botones_de_navegacion().fastForEachIndexed { indice, boton_de_navegacion ->
                 NavigationBarItem(
                     selected = indice == pantalla_actual,
                     label = {
@@ -84,6 +85,8 @@ fun MenuPrincipal(modifier: Modifier){
             composable(PantallaMenuPrincipal.Perfil.ruta) {
                 Text("Pantalla C o de perfil")
             }
+
+
 
         }
     }
