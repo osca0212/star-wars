@@ -23,7 +23,9 @@ fun PantallaNavegadora(modifier: Modifier, vm_fulanito: FulanitoViewModel){
         }
 
         composable<PantallaPublicacion> {
-            PantallaDePublicaciones(modifier = modifier, vm_fulanito)
+            PantallaDePublicaciones(modifier = modifier, vm_fulanito, navegar_siguiente = {
+                //control_de_navegacion.navigate(PantallaPublicacion)
+            })
         }
 
         composable("curiosidades") {

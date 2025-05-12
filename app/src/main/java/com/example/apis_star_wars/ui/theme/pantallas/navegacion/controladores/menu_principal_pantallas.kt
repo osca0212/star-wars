@@ -5,7 +5,7 @@ import androidx.compose.material.icons.filled.AccountCircle
 import androidx.compose.material.icons.filled.Call
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Info
-import androidx.compose.material.icons.filled.Lightbulb
+import androidx.compose.material.icons.filled.Star
 import androidx.compose.ui.graphics.vector.ImageVector
 
 sealed class PantallaMenuPrincipal(val ruta: String) {
@@ -39,7 +39,7 @@ data class BotonesInferioresNavegacion(
             ),
             BotonesInferioresNavegacion( // Nuevo botón
                 etiqueta = "Curiosidades",
-                icono = Icons.Filled.Lightbulb,
+                icono = Icons.Filled.Star,
                 ruta = PantallaMenuPrincipal.Curiosidades.ruta
             )
         )

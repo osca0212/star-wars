@@ -1,4 +1,5 @@
-package com.example.apis_star_wars.pantallas
+//package com.example.apis_star_wars.pantallas
+package  com.example.apis_star_wars.ui.theme.pantallas.principales.star_wars
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -13,6 +14,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.apis_star_wars.ui.theme.VerdeStarWars
 import com.example.apis_star_wars.ui.theme.MoradoStarWars
+import androidx.compose.foundation.lazy.items
 
 data class Curiosidad(val titulo: String, val descripcion: String)
 

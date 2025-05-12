@@ -1,3 +1,4 @@
+//package com.example.apis_star_wars
 package com.example.clon_fulanito
 
 import android.os.Bundle
@@ -24,7 +25,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.clon_fulanito.ui.pantallas.PantallaNavegadora
 import com.example.clon_fulanito.ui.pantallas.navegacion.MenuPrincipal
-import com.example.clon_fulanito.ui.theme.Clon_fulanitoTheme
+import com.example.apis_star_wars.ui.theme.Apis_Star_WarsTheme
 import com.example.clon_fulanito.vista_modelos.FulanitoViewModel
 
 class MainActivity : ComponentActivity() {
@@ -34,7 +35,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            Clon_fulanitoTheme {
+            Apis_Star_WarsTheme {
                 MenuPrincipal(modifier = Modifier.fillMaxSize())
             }
         }
@@ -47,9 +48,9 @@ class MainActivity : ComponentActivity() {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    Clon_fulanitoTheme {
-        Clon_fulanitoTheme {
-            MenuPrincipal(modifier = Modifier.fillMaxSize())
-        }
+    Apis_Star_WarsTheme {
+        MenuPrincipal(modifier = Modifier.fillMaxSize())
     }
 }
+
+//prueba de que se actualizo
